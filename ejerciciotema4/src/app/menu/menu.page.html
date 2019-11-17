@@ -1,0 +1,67 @@
+<ion-app>
+	<ion-menu>
+      <ion-header>
+        <ion-toolbar color="primary">
+        <ion-title>Menu</ion-title>
+        </ion-toolbar>
+      </ion-header>
+  
+  <ion-content>
+      <ion-list>
+      <ion-list-header>
+          Navigate
+      </ion-list-header>
+          
+          <ion-menu-toggle auto-hide="false">
+            <ion-item [[routerLink]="['/menu/home']">
+            <ion-icon slot="start" name='home'></ion-icon>
+            <ion-label>
+              Home
+             </ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+
+          <ion-menu-toggle auto-hide="false">
+              <ion-item [[routerLink]="['/menu/explorar']">
+              <ion-icon slot="start" name='explorar'></ion-icon>
+              <ion-label>
+                Explorar
+               </ion-label>
+              </ion-item>
+          </ion-menu-toggle>
+
+           
+          <ion-menu-toggle auto-hide="false">
+              <ion-item [[routerLink]="['/menu/compras']">
+              <ion-icon slot="start" name='compras'></ion-icon>
+              <ion-label>
+                Compras
+               </ion-label>
+              </ion-item>
+            </ion-menu-toggle>
+
+
+            <ion-menu-toggle auto-hide="false">
+                <ion-item [[routerLink]="['/menu/cuenta']">
+                <ion-icon slot="start" name='cuenta'></ion-icon>
+                <ion-label>
+                  Cuenta
+                 </ion-label>
+                </ion-item>
+              </ion-menu-toggle> 
+
+              <ion-menu-toggle auto-hide="false">
+                  <ion-item [[routerLink]="['/menu/ajustes']">
+                  <ion-icon slot="start" name='ajustes'></ion-icon>
+                  <ion-label>
+                    Ajustes
+                   </ion-label>
+                  </ion-item>
+                </ion-menu-toggle>
+
+       </ion-list>
+	</ion-content>
+
+</ion-menu>
+		<ion-router-outlet main></ion-router-outlet>
+</ion-app>
